@@ -1,0 +1,16 @@
+{
+  "name": "get-real-ip",
+  "version": "1.0.0",
+  "description": "get real public ip by RTCPeerConnection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webtc",
+    "get real ip",
+    "RTCPeerConnection"
+  ],
+  "author": "chenym1992",
+  "license": "MIT"
+}
