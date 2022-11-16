@@ -1,6 +1,6 @@
 {
   "name": "get-real-ip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "get real public ip by RTCPeerConnection",
   "main": "index.js",
   "scripts": {

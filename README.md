@@ -14,14 +14,35 @@ pnpm add get-real-ip
 
 ```js
 import getRealIp from "get-real-ip";
-getRealIp().then(ip=>{
-    console.log('ip: ', ip);
-})
+getRealIp().then((ip) => {
+  console.log("ip: ", ip);
+})(
+  // or with async/await
 
-// or with async/await
+  async () => {
+    const ip = await getRealIp();
+    console.log("ip: ", ip);
+  }
+)();
+```
 
-(async ()=>{
-    const ip = await getRealIp()
-    console.log('ip: ', ip);
-})()
+## Use custom iceServers
+
+```js
+import getRealIp from "get-real-ip";
+const iceServers = [
+  {
+    urls: ["stun:stun.l.google.com:19302"],
+  },
+];
+getRealIp(iceServers).then((ip) => {
+  console.log("ip: ", ip);
+})(
+  // or with async/await
+
+  async () => {
+    const ip = await getRealIp(iceServers);
+    console.log("ip: ", ip);
+  }
+)();
 ```
