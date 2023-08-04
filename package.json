@@ -1,8 +1,13 @@
 {
   "name": "get-real-ip",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "get real public ip by RTCPeerConnection",
   "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "url": "https://github.com/chenym1992/get-real-ip"
+  },
+  "homepage": "https://github.com/chenym1992/get-real-ip",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
