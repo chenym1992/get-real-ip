@@ -5,12 +5,13 @@ const config = {
     },
   ],
 };
+
 /**
- * get real ip by RTCPeerConnection
- * @params iceServers
- * @returns
+ * Get the real IP address using RTCPeerConnection.
+ * @param {Array} iceServers - The array of ICE servers.
+ * @returns {Promise} A promise that resolves to the real IP address.
  */
-export default function getRealIp(iceServers) {
+export default function getRealIp(iceServers = []) {
   return new Promise((resolve) => {
     if (iceServers.length) {
       config.iceServers = iceServers;
