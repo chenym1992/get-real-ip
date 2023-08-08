@@ -18,7 +18,6 @@ getRealIp().then((ip) => {
   console.log("ip: ", ip);
 })(
   // or with async/await
-
   async () => {
     const ip = await getRealIp();
     console.log("ip: ", ip);
